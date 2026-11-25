@@ -1,0 +1,89 @@
+{
+ "table_s1": {
+  "archetypes": [
+   "the tipping point",
+   "the tragedy of the commons",
+   "precommitment"
+  ],
+  "topics": [
+   "ecology",
+   "politics and society",
+   "cell and molecular biology"
+  ],
+  "texts": [
+   {
+    "text_id": "t01",
+    "archetype": "the tipping point",
+    "topic": "ecology",
+    "figure": "S2 (the article's Figure 5a)"
+   },
+   {
+    "text_id": "t02",
+    "archetype": "the tipping point",
+    "topic": "politics and society",
+    "figure": "S3"
+   },
+   {
+    "text_id": "t03",
+    "archetype": "the tipping point",
+    "topic": "cell and molecular biology",
+    "figure": "S4"
+   },
+   {
+    "text_id": "t04",
+    "archetype": "the tragedy of the commons",
+    "topic": "ecology",
+    "figure": "S5"
+   },
+   {
+    "text_id": "t05",
+    "archetype": "the tragedy of the commons",
+    "topic": "politics and society",
+    "figure": "S6 (the article's Figure 5b)"
+   },
+   {
+    "text_id": "t06",
+    "archetype": "the tragedy of the commons",
+    "topic": "cell and molecular biology",
+    "figure": "S7"
+   },
+   {
+    "text_id": "t07",
+    "archetype": "precommitment",
+    "topic": "ecology",
+    "figure": "S8"
+   },
+   {
+    "text_id": "t08",
+    "archetype": "precommitment",
+    "topic": "politics and society",
+    "figure": "S9"
+   },
+   {
+    "text_id": "t09",
+    "archetype": "precommitment",
+    "topic": "cell and molecular biology",
+    "figure": "S10"
+   }
+  ]
+ },
+ "figure_s11": {
+  "text_id": "t10",
+  "figure": "S11",
+  "language": "French"
+ },
+ "maps": {
+  "model": "maps/qwen3.8-27b_centerline.png",
+  "archetype": {
+   "the tipping point": "maps/set_archetype_the-tipping-point.png",
+   "the tragedy of the commons": "maps/set_archetype_the-tragedy-of-the-commons.png",
+   "precommitment": "maps/set_archetype_precommitment.png",
+   "spontaneous synchronization": "maps/set_archetype_spontaneous-synchronization.png"
+  },
+  "topic": {
+   "ecology": "maps/set_topic_ecology.png",
+   "politics and society": "maps/set_topic_politics-and-society.png",
+   "cell and molecular biology": "maps/set_topic_cell-and-molecular-biology.png"
+  }
+ }
+}

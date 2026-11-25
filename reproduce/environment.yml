@@ -1,0 +1,17 @@
+# The package's environment. reproduce.sh needs Python only; scripts/jobs.py needs numpy; scripts/run.py needs torch, transformers and accelerate and a GPU
+# with about 60 GB of memory. The versions are those the stored answers were made with (config.json "made_on").
+name: knocking-out-abstract-ideas
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - numpy==2.5.3
+    - torch==2.14.0
+    - transformers==5.17.0
+    - accelerate==1.15.0
+    - tokenizers==0.23.2
+    - safetensors==0.8.0
+    - huggingface-hub==1.32.0
+    - jinja2==3.1.2

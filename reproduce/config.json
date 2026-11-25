@@ -1,0 +1,49 @@
+{
+ "model": "Qwen/Qwen3.8-27B",
+ "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+ "dtype": "bfloat16",
+ "layers": 64,
+ "neurons_per_layer": 17408,
+ "question": "Name the archetypal relationship pattern the text below instantiates, and the subject area it is about, each with a few words of explanation. Answer on two lines: \"pattern: the name: the explanation\" and \"subject: the area: the explanation\".\n\nText:\n{text}",
+ "prompt": "the question is the single user turn of the model's chat template with thinking off; the text is inserted verbatim",
+ "decoding": {
+  "greedy": true,
+  "enable_thinking": false,
+  "max_new_tokens": 150,
+  "texts_per_forward_pass": 1
+ },
+ "silencing": "every neuron listed for a layer is set to zero where its activation enters that layer's MLP down-projection (mlp.down_proj), at every token of the prompt and of the answer; layers and neurons are numbered from zero as in the released weights; a job lists the sets silenced together",
+ "verdict": "each stored answer line carries the group it was read as (the pattern line an archetype, the subject line a topic): a group the article shows by its name below, any other as 'other N', numbered within its text only; a line keeps its group when its group is the one the untouched model's line to the same text had, and loses it otherwise; a missing line is lost. A rerun is checked by its answers, which at the pinned revision repeat the stored ones character for character and so carry their groups",
+ "made_on": {
+  "note": "the stored answers were made on this hardware and software; a rerun repeats them character for character on the same, and on other hardware or software can differ in wording where the model's next word is nearly tied",
+  "machine": "NVIDIA DGX Spark",
+  "gpu": "one NVIDIA GB10 (compute capability 12.1), driver 580.178.04",
+  "system": "Ubuntu 24.04, aarch64, kernel 7.0.0-1019-nvidia",
+  "cuda": "13.0",
+  "cudnn": "9.24",
+  "python": "3.12.3",
+  "torch": "2.14.0+cu130",
+  "transformers": "5.17.0",
+  "accelerate": "1.15.0",
+  "tokenizers": "0.23.2",
+  "safetensors": "0.8.0",
+  "huggingface-hub": "1.32.0",
+  "jinja2": "3.1.2",
+  "numpy": "2.5.3",
+  "attention": "sdpa (the transformers default)",
+  "loading and decoding": "the weights are loaded as bfloat16 onto one GPU; each answer is decoded without special tokens and stripped of surrounding whitespace"
+ },
+ "groups": {
+  "archetype": {
+   "the-tipping-point": "the tipping point",
+   "the-tragedy-of-the-commons": "the tragedy of the commons",
+   "precommitment": "precommitment",
+   "spontaneous-synchronization": "spontaneous synchronization"
+  },
+  "topic": {
+   "ecology": "ecology",
+   "politics-and-society": "politics and society",
+   "cell-and-molecular-biology": "cell and molecular biology"
+  }
+ }
+}

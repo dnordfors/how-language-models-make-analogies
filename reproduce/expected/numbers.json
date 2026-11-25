@@ -1,0 +1,47 @@
+{
+ "source": "the supplementary material (Table S1)",
+ "table_s1": {
+  "the tipping point": {
+   "ecology": {
+    "in_place_of_the_archetype": "the Dunning-Kruger effect",
+    "in_place_of_the_topic": "biophysics"
+   },
+   "politics and society": {
+    "in_place_of_the_archetype": "metaphorical analogy",
+    "in_place_of_the_topic": "statistical mechanics"
+   },
+   "cell and molecular biology": {
+    "in_place_of_the_archetype": "feedback loop",
+    "in_place_of_the_topic": "nonlinear dynamics"
+   }
+  },
+  "the tragedy of the commons": {
+   "ecology": {
+    "in_place_of_the_archetype": "competitive exclusion",
+    "in_place_of_the_topic": "public goods provision"
+   },
+   "politics and society": {
+    "in_place_of_the_archetype": "zero-sum competition",
+    "in_place_of_the_topic": "game theory"
+   },
+   "cell and molecular biology": {
+    "in_place_of_the_archetype": "multi-level selection",
+    "in_place_of_the_topic": "evolutionary game theory"
+   }
+  },
+  "precommitment": {
+   "ecology": {
+    "in_place_of_the_archetype": "fixed threshold rule",
+    "in_place_of_the_topic": "optimal stopping"
+   },
+   "politics and society": {
+    "in_place_of_the_archetype": "performative speech act",
+    "in_place_of_the_topic": "game theory"
+   },
+   "cell and molecular biology": {
+    "in_place_of_the_archetype": "Heisenberg cut",
+    "in_place_of_the_topic": "behavioral economics"
+   }
+  }
+ }
+}
